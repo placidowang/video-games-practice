@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Filters from './components/Filters.js'
+import Game from './components/Game.js'
+import games from './data/games.js'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  // constructor() {
+  //   super()
+  // }
+
+  // playGame = (gameId) => {
+  //   games.map(game => {
+  //     if (gameId === game.id) {
+  //       // console.log(this)
+  //       this.setState({
+  //         played: true
+  //       })
+  //     }
+  //     return game
+  //   })
+  // }
+
+  render() {
+    // console.log(games)
+    return (
+      <div>
+        <Filters />
+        {games.map(game => <Game game={game}/>)}
+      </div>
+    )
+  }
 }
 
 export default App;

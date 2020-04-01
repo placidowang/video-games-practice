@@ -1,0 +1,49 @@
+.card {
+  display: inline-table;
+  position: relative;
+  bottom: 0px;
+  height: 400px;
+  width: 250px;
+  border-style: solid;
+  border-color: black;
+  margin: 20px;
+  padding: 20px;
+}
+
+.cover {
+  /* text-align: center; */
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.play-btn {
+  width: 150px;
+  position: relative;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.played-btn {
+  width: 150px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: lightgray;
+  border: none;
+  color: white;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
